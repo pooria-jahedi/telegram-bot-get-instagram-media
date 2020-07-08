@@ -1,0 +1,25 @@
+{
+  "require": {
+    "telegram-bot/api": "^2.3",
+    "guzzlehttp/guzzle": "~6.0",
+    "illuminate/database": "^7.5",
+    "kavenegar/php": "^1.2",
+    "ext-json": "*",
+    "raiym/instagram-php-scraper": "^0.9.11",
+    "phpfastcache/phpfastcache": "^8.0",
+    "morilog/jalali": "3.*"
+  },
+  "autoload": {
+    "psr-4": {"Acme\\": "src/"},
+    "classmap": [
+      "app/Models/Users.php",
+      "app/Models/Settings.php",
+      "app/Traits/Language.php",
+      "app/Helpers/Utilities.php",
+      "app/Controller/V1/CommandController.php",
+      "app/Controller/V1/CallBackController.php",
+      "app/Controller/V1/MessageController.php",
+      "app/Controller/V1/Controller.php"
+    ]
+  }
+}
